@@ -1,0 +1,43 @@
+
+CREATE TABLE Answers모음
+(
+  AnswersID INT          NOT NULL COMMENT '답변',
+  Answers   VARCHAR(200) NULL     COMMENT '답변들',
+  PRIMARY KEY (AnswersID)
+);
+
+CREATE TABLE ClientSurvey
+(
+  ClientID INT          NOT NULL COMMENT '설문참여자의 고유번호',
+  Name     VARCHAR(200) NULL     COMMENT '설문참여자의 이름 / 아이디로 해도 될 듯?',
+  PRIMARY KEY (ClientID)
+);
+
+CREATE TABLE Questions
+(
+  QuestionsID INT          NOT NULL COMMENT '질문',
+  Questions   VARCHAR(200) NULL     COMMENT '이용빈도, 개선사항, 만족도, 친절도',
+  PRIMARY KEY (QuestionsID)
+) COMMENT '문항 모음';
+
+CREATE TABLE 결과
+(
+  QuestionsID INT NOT NULL COMMENT '질문',
+  AnswersID   INT NOT NULL COMMENT '답변',
+  ClientID    INT NOT NULL COMMENT '설문참여자의 고유번호'
+);
+
+ALTER TABLE 결과
+  ADD CONSTRAINT FK_Questions_TO_결과
+    FOREIGN KEY (QuestionsID)
+    REFERENCES Questions (QuestionsID);
+
+ALTER TABLE 결과
+  ADD CONSTRAINT FK_Answers모음_TO_결과
+    FOREIGN KEY (AnswersID)
+    REFERENCES Answers모음 (AnswersID);
+
+ALTER TABLE 결과
+  ADD CONSTRAINT FK_ClientSurvey_TO_결과
+    FOREIGN KEY (ClientID)
+    REFERENCES ClientSurvey (ClientID);
