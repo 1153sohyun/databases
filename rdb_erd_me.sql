@@ -1,0 +1,24 @@
+
+CREATE TABLE Company
+(
+  ID      VARCHAR(200) NOT NULL COMMENT 'UniqueID',
+  Name    VARCHAR(200) NOT NULL COMMENT '이름',
+  Age     INT          NULL     COMMENT '나이',
+  Address VARCHAR(200) NULL     COMMENT '주소',
+  Salary  INT          NOT NULL COMMENT '급여',
+  PRIMARY KEY (ID)
+);
+
+CREATE TABLE Department
+(
+  ID     VARCHAR(200) NOT NULL COMMENT 'UniqueID',
+  DEPT   VARCHAR(200) NOT NULL COMMENT '부서',
+  EMP_ID VARCHAR(200) NOT NULL COMMENT 'UniqueID',
+  ID     VARCHAR(200) NOT NULL COMMENT 'UniqueID',
+  PRIMARY KEY (ID, EMP_ID)
+);
+
+ALTER TABLE Department
+  ADD CONSTRAINT FK_Company_TO_Department
+    FOREIGN KEY (ID)
+    REFERENCES Company (ID);

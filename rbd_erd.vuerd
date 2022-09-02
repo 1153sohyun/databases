@@ -1,0 +1,320 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -126.66666666666664,
+    "scrollLeft": -24.666666666666668,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Company",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "75606f74-3197-4202-926d-07963d0d0541"
+          },
+          {
+            "name": "Name",
+            "comment": "이름",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c658e7f2-d1e4-4177-9a56-e51b4a7289f9"
+          },
+          {
+            "name": "Age",
+            "comment": "나이",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bdabf0ee-8042-4de2-b864-c16395b757ea"
+          },
+          {
+            "name": "Address",
+            "comment": "주소",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c75425ff-a299-4f93-98f1-130789fc3ab7"
+          },
+          {
+            "name": "Salary",
+            "comment": "급여",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0449053d-ea42-4ad4-b284-824d47c982e8"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 91.9995,
+          "top": 65.3336,
+          "zIndex": 167,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7a8e4913-e609-4549-a5e3-d618476105ea"
+      },
+      {
+        "name": "Department",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "c578868d-c3ff-49d8-a14b-764f19104c82"
+          },
+          {
+            "name": "DEPT",
+            "comment": "부서",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "2ead8489-139f-47d9-aea3-061010ea6656"
+          },
+          {
+            "name": "EMP_ID",
+            "comment": "UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "38b63cbf-73bb-4f59-ae2e-03bee65cdb14"
+          },
+          {
+            "name": "ID",
+            "comment": "UniqueID",
+            "dataType": "VARCHAR(200)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 89.29296875,
+              "widthDefault": 60
+            },
+            "id": "ac2c9925-8248-4aa0-9b12-5b61cc64fdd6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 94.0003,
+          "top": 386.6665,
+          "zIndex": 169,
+          "widthName": 72.54150390625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "3c95e3f0-9bd4-4385-b710-95dd5f3c4f52"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7a8e4913-e609-4549-a5e3-d618476105ea",
+          "columnIds": [
+            "75606f74-3197-4202-926d-07963d0d0541"
+          ],
+          "x": 280.145984375,
+          "y": 236.8336,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "3c95e3f0-9bd4-4385-b710-95dd5f3c4f52",
+          "columnIds": [
+            "ac2c9925-8248-4aa0-9b12-5b61cc64fdd6"
+          ],
+          "x": 282.146784375,
+          "y": 386.6665,
+          "direction": "top"
+        },
+        "constraintName": "fk_company_to_department",
+        "visible": true,
+        "id": "0b767277-09f1-49e3-a56f-5f0dde3d39ec"
+      }
+    ]
+  }
+}
